@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-dark-orange:#b97a2f;
+    --color-liggt-blue:#9ab0b6a2;
+    --color-dark-green:#676943;
+    --color-primary:var(--color-dark-orange);
+    --color-secondary:var(--color-liggt-blue);
+    --color-third:var(--color-dark-green);
+}
+html,body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url('https://st1.myideasoft.com/idea/ba/48/myassets/products/006/scanned000001.jpg?revision=1519217235');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.container .navbar{
+    width: 100%;
+    height: 80px;
+    background: var(--color-secondary);
+    border-bottom: 5px solid var(--color-dark-orange);
+}
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-dark-orange);
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    transition: 0.5s;
+    border-radius: 5px;
+    
+}
+
+.navbar ul li .active,
+.navbar ul li a:hover{
+    background-color: var(--color-dark-orange);
+}
+
+.container .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    user-select: none;
+
+}
+
+
+.container .center h1{
+    color: var(--color-dark-orange);
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+
+}
+.container .center h2{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: 885px;
+
+}
+
+.container .center .buttons{
+    margin: 35px 280px;
+}
+.container .center .buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    background-color: var(--color-dark-green);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
